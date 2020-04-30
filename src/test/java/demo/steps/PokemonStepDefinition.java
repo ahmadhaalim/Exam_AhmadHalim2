@@ -12,7 +12,7 @@ public class PokemonStepDefinition {
     public String pokemon;
     public PokemonApi pokeApi = new PokemonApi();
     public String savedPokemonname;
-    public String savedPokemonId;
+    public int savedPokemonId;
 
     @Given("User has the name pokemon {string}")
     public void userHasTheNamePokemon(String pokename) {

@@ -5,11 +5,11 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 
 public class WebDriverHooks {
-    @Before
+    @Before(value = "@Web")
     public void initializeWebDriver(){
         WebDriverInstance.initialize();
     }
-    @After
+    @After(value = "@Web")
     public void quitWebDriver(){
         WebDriverInstance.quit();
     }

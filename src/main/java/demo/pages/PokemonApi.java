@@ -6,7 +6,7 @@ import io.restassured.response.Response;
 public class PokemonApi {
 
     String pokename;
-    String pokeid;
+    int pokeid;
     public void getPokemonByName(String name) {
         Response response = RestAssured
                 .given()
@@ -14,17 +14,17 @@ public class PokemonApi {
                 .basePath("/api/v2/pokemon/")
                 .header("Content-type", "application/json")
                 .get(name);
-        String pokename = response.path("name");
-        System.out.println(pokename);
-        int pokeid = response.path("id");
-        System.out.println(pokeid);
+        this.pokename = response.path("name");
+        System.out.println(this.pokename);
+        this.pokeid = response.path("id");
+        System.out.println(this.pokeid);
     }
 
     public String getPokemonName(){
         return this.pokename;
     }
 
-    public String getPokeid(){
+    public int getPokeid(){
         return this.pokeid;
     }
 }
