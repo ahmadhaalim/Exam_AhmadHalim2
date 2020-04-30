@@ -6,10 +6,13 @@ Akhirnya karena takut habis waktu jadi saya lompat ke android, dari pagi sampe j
 Android saya lancar cuma yang refresh saya lewati karena bingung apa yang harus diassert dan lanjut ke Web.
 Proses web mestinya bisa cuma sayangnya masih nyangkut di proses APInya itu dan waktu udah mepet, mungkin kalo sampe setengah 5 mungkin bisa clear.
 
-Errornya saya dapet begini Mas, saya bingung sebenernya karena tidak jalan karena error ini atau internet saya soalnya proses tesnya gak berenti cuma loading di get API nya lama banget kadang berhasil kadang gagal. Test belom failed. Jadi tetep saya lanjutin buatnya cuma sayang waktunya kurang. Kalo kata Mas Hendri "Errornya gak jelas" wkwk <br/>
+Errornya saya dapet begini Mas, saya bingung sebenernya karena tidak jalan karena error ini atau internet saya soalnya proses tesnya gak berenti cuma loading di get API nya lama banget kalo kadang cepet itu juga misal 15detik bisa pass. Test belom failed. Jadi tetep saya lanjutin buatnya cuma sayang waktunya kurang. Kalo kata Mas Hendri "Errornya gak jelas" wkwk <br/>
 SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder". <br/>
 SLF4J: Defaulting to no-operation (NOP) logger implementation <br/>
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details. <br/>
 
 Mungkin itu aja mas, cuma mau curhat aja wkwk. 
-Terima Kasih atas perhatiannya dan ilmunya yang sangat bermanfaat
+Terima Kasih atas perhatiannya dan ilmunya yang sangat bermanfaat <br/>
+<br/>
+Yang web sudah saya selesaikan setelah exam di https://gitlab.com/ahmadhaalim/afterexam <br/>
+
