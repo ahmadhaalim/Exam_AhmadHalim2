@@ -1,6 +1,6 @@
 # Exam_AhmadHalim2
-Exam week 5
-Selamat pagi,siang,malam Mas.
+Exam week 5 <br/>
+Selamat pagi,siang,malam Mas. <br/>
 Saya masih belom yang get Api nya mas, konsepnya saya dapet, cuma entah kenapa loading nya lama banget, gak selesai-selesai, sempet rebuild project berkali-kali juga karena debugging dan sempet ilang juga errornya tapi tiba-tiba muncul lagi, errornya bukan kaya di syntax gitu mas.
 Akhirnya karena takut habis waktu jadi saya lompat ke android, dari pagi sampe jam 12an masih kotak katik yang API.
 Android saya lancar cuma yang refresh saya lewati karena bingung apa yang harus diassert dan lanjut ke Web.
