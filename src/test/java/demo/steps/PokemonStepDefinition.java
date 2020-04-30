@@ -72,7 +72,7 @@ public class PokemonStepDefinition {
     @And("User could see the same id")
     public void userCouldSeeTheSameId() {
         String id = wiki.getId();
-        Assert.assertEquals("0"+Integer.toString(this.savedPokemonId) ,id);
+        Assert.assertEquals(this.savedPokemonId ,Integer.parseInt(id));
 //        Assert.assertEquals("#25" ,id);
     }
 
