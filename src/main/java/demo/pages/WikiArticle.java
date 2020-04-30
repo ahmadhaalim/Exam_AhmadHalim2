@@ -10,9 +10,10 @@ public class WikiArticle {
                 "/table[1]/tbody[1]/tr[1]/th[1]"));
         return name.getText();
     }
-    
+
     public String getId(){
-        WebElement id = WebDriverInstance.driver.findElement(By.xpath(""));
+        WebElement id = WebDriverInstance.driver.findElement(By.xpath("/html[1]/body[1]/div[3]/div[3]/div[4]/div[1]" +
+                "/table[1]/tbody[1]/tr[5]/th[1]/table[1]/tbody[1]/tr[1]/td[1]/center[1]/big[1]/b[1]/abbr[1]"));
         return id.getText();
     }
 }

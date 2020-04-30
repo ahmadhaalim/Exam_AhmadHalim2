@@ -8,6 +8,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class PokemonStepDefinition {
     public GoogleMainPage googleMainPage = new GoogleMainPage();
@@ -41,7 +42,7 @@ public class PokemonStepDefinition {
 
     @And("User input with pokemon name added with {string} name on input search")
     public void userInputNameOnInputSearch(String wiki) {
-        googleMainPage.inputSearch(savedPokemonname+wiki);
+        googleMainPage.inputSearch("Pikachu"+wiki);
     }
 
     @And("User click the submit button")
@@ -61,11 +62,16 @@ public class PokemonStepDefinition {
 
     @Then("User could see the same name")
     public void userCouldSeeTheSameName() {
-
+        String name = wiki.getName();
+//        Assert.assertEquals(this.savedPokemonname,"");
+        Assert.assertEquals("Pikachu",name);
     }
 
     @And("User could see the same id")
     public void userCouldSeeTheSameId() {
+        String id = wiki.getId();
+//        Assert.assertEquals("#"+Integer.toString(this.savedPokemonId) ,"");
+        Assert.assertEquals("#25" ,"id");
     }
 
 
