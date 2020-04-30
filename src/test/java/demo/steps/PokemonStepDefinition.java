@@ -1,6 +1,7 @@
 package demo.steps;
 
 import demo.pages.GoogleMainPage;
+import demo.pages.GoogleSearchPage;
 import demo.pages.PokemonApi;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -9,6 +10,7 @@ import io.cucumber.java.en.When;
 
 public class PokemonStepDefinition {
     public GoogleMainPage googleMainPage = new GoogleMainPage();
+    public GoogleSearchPage googleSearchPage = new GoogleSearchPage();
     public String pokemon;
     public PokemonApi pokeApi = new PokemonApi();
     public String savedPokemonname;
@@ -52,10 +54,12 @@ public class PokemonStepDefinition {
 
     @And("User click the first search result")
     public void userClickTheFirstSearchResult() {
+        googleSearchPage.clickFirstResult();
     }
 
     @Then("User could see the same name")
     public void userCouldSeeTheSameName() {
+
     }
 
     @And("User could see the same id")
