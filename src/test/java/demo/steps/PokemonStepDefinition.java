@@ -32,7 +32,9 @@ public class PokemonStepDefinition {
     @And("User save the name and id")
     public void userSaveTheNameAndId() {
         this.savedPokemonId = pokeApi.getPokeid();
-        this.savedPokemonname = pokeApi.getPokemonName();
+        System.out.println("aku disana"+this.savedPokemonId);
+        this.savedPokemonname = pokeApi.getPokeName();
+        System.out.println("aku disana"+this.savedPokemonname);
     }
 
     @And("User open the google homepage")
@@ -42,12 +44,12 @@ public class PokemonStepDefinition {
 
     @And("User input with pokemon name added with {string} name on input search")
     public void userInputNameOnInputSearch(String wiki) {
-        googleMainPage.inputSearch("Pikachu"+wiki);
+        googleMainPage.inputSearch(this.savedPokemonname+" "+wiki);
     }
 
-    @And("User click the submit button")
-    public void userClickTheSubmitButton() {
-        googleMainPage.clickSearch();
+    @And("User press enter on the input search")
+    public void userPressEnterOnTheInputSearch() {
+        googleMainPage.pressEnter();
     }
 
     @And("User is in the google search page")
@@ -57,21 +59,21 @@ public class PokemonStepDefinition {
 
     @And("User click the first search result")
     public void userClickTheFirstSearchResult() {
-        googleSearchPage.clickFirstResult();
+        googleSearchPage.clickFirstResult(this.savedPokemonname);
     }
 
     @Then("User could see the same name")
     public void userCouldSeeTheSameName() {
         String name = wiki.getName();
-//        Assert.assertEquals(this.savedPokemonname,"");
-        Assert.assertEquals("Pikachu",name);
+        Assert.assertEquals(this.savedPokemonname,name.toLowerCase());
+//        Assert.assertEquals("pikachu",name.toLowerCase());
     }
 
     @And("User could see the same id")
     public void userCouldSeeTheSameId() {
         String id = wiki.getId();
-//        Assert.assertEquals("#"+Integer.toString(this.savedPokemonId) ,"");
-        Assert.assertEquals("#25" ,id);
+        Assert.assertEquals("0"+Integer.toString(this.savedPokemonId) ,id);
+//        Assert.assertEquals("#25" ,id);
     }
 
 

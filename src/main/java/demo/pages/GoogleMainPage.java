@@ -2,7 +2,9 @@ package demo.pages;
 
 import demo.webdriver.WebDriverInstance;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class GoogleMainPage {
     public void  openGooglePage(){
@@ -16,9 +18,9 @@ public class GoogleMainPage {
         inputsearch.sendKeys(keyword);
     }
 
-    public void clickSearch(){
-        WebElement submitbutton = WebDriverInstance.driver.findElement(By.xpath("//input[@name='btnK' and @type='submit']"));
-        submitbutton.click();
+    public void pressEnter(){
+        WebElement inputsearch = WebDriverInstance.driver.findElement(By.xpath("//input[@name='q']"));
+        inputsearch.sendKeys(Keys.ENTER);
     }
 
 }
