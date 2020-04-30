@@ -3,6 +3,7 @@ package demo.steps;
 import demo.pages.GoogleMainPage;
 import demo.pages.GoogleSearchPage;
 import demo.pages.PokemonApi;
+import demo.pages.WikiArticle;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -11,6 +12,7 @@ import io.cucumber.java.en.When;
 public class PokemonStepDefinition {
     public GoogleMainPage googleMainPage = new GoogleMainPage();
     public GoogleSearchPage googleSearchPage = new GoogleSearchPage();
+    public WikiArticle wiki = new WikiArticle();
     public String pokemon;
     public PokemonApi pokeApi = new PokemonApi();
     public String savedPokemonname;
