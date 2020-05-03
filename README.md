@@ -8,7 +8,7 @@ Proses web mestinya bisa cuma sayangnya masih nyangkut di proses APInya itu dan 
 ~~Errornya saya dapet begini Mas, saya bingung sebenernya karena tidak jalan karena error ini atau internet saya soalnya proses tesnya gak berenti cuma loading di get API nya lama banget kalo kadang cepet itu juga misal 15detik bisa pass. Test belom failed. Jadi tetep saya lanjutin buatnya cuma sayang waktunya kurang. Kalo kata Mas Hendri "Errornya gak jelas" wkwk <br/>
 SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder". <br/>
 SLF4J: Defaulting to no-operation (NOP) logger implementation <br/>
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details. <br/>
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details. <br/>~~
 
 <br/>
 Update : Error atau tulisan diatas tidak ada kaitan, memang internet saya yang sulit akses.
