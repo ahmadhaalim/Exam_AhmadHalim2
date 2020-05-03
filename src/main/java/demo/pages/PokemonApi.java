@@ -12,13 +12,15 @@ public class PokemonApi {
         Response response = RestAssured
                 .given()
                 .baseUri("https://pokeapi.co")
-                .basePath("/api")
+                .basePath("/api").log().all()
+//                .pathParam("pokemonName", name)
                 .header("Content-type", "application/json")
                 .get("/v2/pokemon/"+name);
         this.pokename = response.path("name");
         System.out.println(this.pokename);
         this.pokeid = response.path("id");
         System.out.println(this.pokeid);
+        response.getBody().prettyPrint();
     }
 
     public String getPokeName(){
