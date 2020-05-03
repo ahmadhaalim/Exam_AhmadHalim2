@@ -1,5 +1,7 @@
 @Web
 Feature: User could get the pokemon name and id
+
+  @pikachu
   Scenario: User get the pokemon name and id
     Given User has the name pokemon "pikachu"
     When User request to get by "pikachu"
