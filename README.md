@@ -16,5 +16,5 @@ Update : Error atau tulisan diatas tidak ada kaitan, memang internet saya yang s
 Mungkin itu aja mas, cuma mau curhat aja wkwk. 
 Terima Kasih atas perhatiannya dan ilmunya yang sangat bermanfaat <br/>
 <br/>
-Yang web sudah saya selesaikan setelah exam di https://gitlab.com/ahmadhaalim/afterexam <br/>
+
 
